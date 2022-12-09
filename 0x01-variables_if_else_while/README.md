@@ -181,4 +181,4 @@ Write a program that prints all possible combinations of two two-digit numbers.
 * You are not allowed to use any variable of type char
 * All your code should be in the main function
 
-* Rev. 1:17, 18*
+*Rev. 1:17, 18*
