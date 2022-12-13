@@ -2,7 +2,7 @@
 /**
  * print_sign - Entry point
  *
- * description - Print the sign of a number n
+ * @n: a function that prints the sign of a number n
  *
  * Return: return 1 if n is posiitive, 0 if n is 0, -1 if n is negative
  */
