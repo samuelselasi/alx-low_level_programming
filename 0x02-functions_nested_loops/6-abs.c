@@ -4,7 +4,7 @@
  *
  * description - print absolute value of an integer
  *
- * Return: always 0
+ * Return: return r if r is positive, return r * -1
  */
 int _abs(int r)
 {
