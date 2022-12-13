@@ -2,7 +2,7 @@
 /**
  * _abs - entry point
  *
- * description - compute the absolute value of integer r
+ * @r: a function that computes the absolute value of integer r
  *
  * Return: return r if r is positive, return r * -1
  */
