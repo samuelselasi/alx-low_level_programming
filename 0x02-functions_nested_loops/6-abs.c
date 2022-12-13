@@ -2,7 +2,7 @@
 /**
  * _abs - entry point
  *
- * description - print absolute value of an integer
+ * description - print absolute value of an integer r
  *
  * Return: return r if r is positive, return r * -1
  */
