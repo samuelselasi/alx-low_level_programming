@@ -14,14 +14,14 @@ int main(void)
 
 	printf("%.0f, ", a);
 	printf("%.0f, ", b);
-	while (i < 98)
+	while (i <= 98)
 	{
 		i++;
 		printf("%.0f", c);
 		a = b;
 		b = c;
 		c = a + b;
-		if (i < 98)
+		if (i <= 98)
 		{
 			printf(", ");
 		}
