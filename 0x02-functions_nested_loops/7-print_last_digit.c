@@ -2,7 +2,7 @@
 /**
  * print_last_digit - Entry point
  *
- * description - Print last digit of a number
+ * @r: function that prints the last digit of a number
  *
  * Return: return -1 if r is negative and 1 if r is positive
  */
