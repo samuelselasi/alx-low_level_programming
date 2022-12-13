@@ -2,7 +2,7 @@
 /**
  * _islower - Entry point
  *
- * description - check if c is lowercase
+ * description - check if parameter c is lowercase
  *
  * Return: 1 if c is lower, 0 if otherwise
  */
