@@ -2,7 +2,7 @@
 /**
  * _isalpha - Entry point
  *
- * description - check if letter
+ * description - check if c is an alphabet
  *
  * Return: return 1 if c is a letter, 0 if otherwise
  */
