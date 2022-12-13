@@ -4,7 +4,7 @@
  *
  * description - check if lowercase
  *
- * Return: 1 if lower, 0 if otherwise
+ * Return: 1 if c is lower, 0 if otherwise
  */
 int _islower(int c)
 {
