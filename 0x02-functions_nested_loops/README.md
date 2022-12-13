@@ -64,4 +64,11 @@ Write a function that prints the sign of a number.
 * Returns 0 and prints 0 if n is zero
 * Returns -1 and prints - if n is less than zero
 
+[6-abs.c](./6-abs.c)
+```
+Write a function that computes the absolute value of an integer.
+```
+* Prototype: int _abs(int);
+FYI: The standard library provides a similar function: abs. Run man abs to learn more.
+
 
