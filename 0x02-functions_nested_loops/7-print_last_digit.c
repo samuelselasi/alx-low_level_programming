@@ -4,7 +4,7 @@
  *
  * description - Print last digit of a number
  *
- * Return: always -1 if negative and 1 if positive
+ * Return: return -1 if r is negative and 1 if r is positive
  */
 int print_last_digit(int r)
 {
