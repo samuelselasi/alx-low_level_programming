@@ -3,7 +3,7 @@
 /**
  * print_to_98 - Entry point
  *
- * @n: input number n 
+ * @n: input number n
  *
  * Return: none
  */
