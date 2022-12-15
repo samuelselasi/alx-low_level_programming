@@ -2,8 +2,9 @@
 /**
  * main - main function
  *
+ * description - print Fizz, Buzz, FizzBuzz, 1-100
  *
- * Return: a number
+ * Return: none
  */
 int main(void)
 {
