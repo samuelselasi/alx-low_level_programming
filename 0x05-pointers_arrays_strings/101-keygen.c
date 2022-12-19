@@ -16,8 +16,8 @@ int main(void)
 	{
 		p = (rand() % 128);
 		s += p;
-		printf("%c", p);
+		putchar(p);
 	}
-	printf("%c", 2772 - s);
+	putchar(2772 - s);
 	return (0);
 }
