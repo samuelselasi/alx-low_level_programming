@@ -3,14 +3,17 @@
 #include <time.h>
 
 /**
- * keygen - generate password
+ * main - generate password
  * Return: Always 0
  */
+
 int main(void)
 {
 	int p;
 	int s;
+
 	srand(time(NULL));
+
 	s = 0;
 	while (s <= 2645)
 	{
@@ -19,9 +22,6 @@ int main(void)
 		putchar(p);
 	}
 	putchar(2772 - s);
+	putchar(10);
 	return (0);
 }
-
-
-
-
