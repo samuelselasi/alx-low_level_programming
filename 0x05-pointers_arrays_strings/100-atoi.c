@@ -1,41 +1,37 @@
-#include "main.h"
-#include <stdio.h>
-#include <ctype.h>
-
-/**
- * _atoi - convert str to int
- * @s: the string
- * Return: integer
- */
-
+#include "main.h"                                                                                                                                       
+#include <stdio.h>                                                                                                                                      
+#include <ctype.h>                                                                                                                                      
+                                                                                                                                                        
+/**                                                                                                                                                     
+ * _atoi - convert str to int                                                                                                                           
+ * @s: the string                                                                                                                                       
+ * Return: integer                                                                                                                                      
+ */                                                                                                                                                     
+                                                                                                                                                        
 int _atoi(char *s)
 {
-	int r;
-	int n;
-	int i;
+	int x = 1;
+	unsigned int r = 0;
+	char c = 0;
 
-	n = 1;
-	i = 0;
-	if (s[0] == '\0' || !isdigit(s[0]))
+	while (*s)
 	{
-		return (0);
-	}
-	while (isspace(s[i]))
-	{
-		i++;
-	}
-	if (s[i] == '+' || s[i] == '-')
-	{
-		if (s[i] == '-')
+		if (*s == '-')
+			x *= -1;
+
+		if (*s >= '0' && *s <= '9')
 		{
-			n = -1;
+			c = 1;
+			r = r * 10 + *s - '0';
 		}
-		i++;
+
+		else if (c)
+			break;
+		s++;
 	}
-	while (isdigit(s[i]))
-	{
-		r = r * 10 + (s[i] - '0');
-		i++;
-	}
-	return (n * r);
+
+	if (x < 0)
+		r = (-r);
+
+	return (r);
 }
