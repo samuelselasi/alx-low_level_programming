@@ -1,13 +1,11 @@
-#include "main.h"                                                                                                                                       
-#include <stdio.h>                                                                                                                                      
-#include <ctype.h>                                                                                                                                      
-                                                                                                                                                        
-/**                                                                                                                                                     
- * _atoi - convert str to int                                                                                                                           
- * @s: the string                                                                                                                                       
- * Return: integer                                                                                                                                      
- */                                                                                                                                                     
-                                                                                                                                                        
+#include <stdio.h>
+
+/**
+ * _atoi - convert sting to integer
+ * @s: the string
+ * Return: integer
+ */
+
 int _atoi(char *s)
 {
 	int x = 1;
@@ -17,21 +15,21 @@ int _atoi(char *s)
 	while (*s)
 	{
 		if (*s == '-')
+		{
 			x *= -1;
-
+		}
 		if (*s >= '0' && *s <= '9')
 		{
 			c = 1;
 			r = r * 10 + *s - '0';
 		}
-
 		else if (c)
 			break;
 		s++;
 	}
-
 	if (x < 0)
+	{
 		r = (-r);
-
+	}
 	return (r);
 }
