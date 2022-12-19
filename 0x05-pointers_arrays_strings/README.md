@@ -1,5 +1,7 @@
 ## 0x05. C - Pointers, arrays and strings
 
+![IMG_2410](https://user-images.githubusercontent.com/85158665/208409150-4f6faf86-59ba-49fe-b0a4-3f220c0db1a9.jpg)
+
 ### Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
