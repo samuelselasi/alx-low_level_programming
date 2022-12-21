@@ -36,6 +36,7 @@ and more!
 3. [0x03-debugging](./0x03-debugging)
 4. [0x04-more_functions_nested_loops](./0x04-more_functions_nested_loops)
 5. [0x05-pointers_arrays_strings](./0x05-pointers_arrays_strings)
+6. [0x06-pointers_arrays_strings](./0x06-pointers_arrays_strings)
 
 ## Credits
 Collaborators are acknowledged within each project
