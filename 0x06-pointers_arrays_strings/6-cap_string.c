@@ -1,35 +1,35 @@
 #include "main.h"
 
 /**
- * cap_string - convert 1st words to caps
+ * cap_string - capitalize first words in string
  * @s: the string
  *
- * Return: capped string
+ * Return: capitalized s
  */
 
 char *cap_string(char *s)
 {
-	char *p = s;
-	int cap;
+	int i = 0, j;
+	char a[] = " \t\n,;.!?\"(){}";
 
-	while (*p)
+	while (*(s + i))
 	{
-		if (*p == ' ' || *p == '\t' || *p == '\n' || *p == ',' || *p == ';'
-				|| *p == '.' || *p == '!' || *p == '?' || *p == '"'
-				|| *p == '(' || *p == ')' || *p == '{' || *p == '}')
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
-			cap = 1;
+			if (i == 0)
+			{
+				*(s + i) -= 'a' - 'A';
+			}
+			else
+			{
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
+				}
+			}
 		}
-		else if (cap && *p >= 'a' && *p <= 'z')
-		{
-			*p -= 'a' - 'A';
-			cap = 0;
-		}
-		else
-		{
-			cap = 0;
-		}
-		p++;
+		i++;
 	}
 	return (s);
 }
