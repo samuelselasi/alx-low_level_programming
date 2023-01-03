@@ -1,4 +1,5 @@
 ## 0x07. C - Even more pointers, arrays and strings
+
 ![58fe6b229144b7fe5ebe88afe9ff5cabe2dd0863e1e79b2d02b4103c30b465dd](https://user-images.githubusercontent.com/85158665/210374083-c4aac40a-a2aa-4610-a62d-2be9516996eb.jpg)
 
 ## Learning Objectives
@@ -110,5 +111,3 @@ Note that in the following example we are casting an int[][] into an int*. This 
 Write a function that sets the value of a pointer to a char.
 ```
 * Prototype: void set_string(char **s, char *to);
-
-
