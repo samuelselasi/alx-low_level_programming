@@ -1,4 +1,5 @@
 ## 0x06. C - More pointers, arrays and strings
+![happy-clapping](https://user-images.githubusercontent.com/85158665/209022689-e042336c-10d5-4b30-890e-8ae50855ffb7.gif)
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
