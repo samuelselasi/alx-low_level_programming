@@ -88,4 +88,10 @@ Write a function that locates a substring.
 
 FYI: The standard library provides a similar function: strstr. Run man strstr to learn more.
 
+[7-print_chessboard.c](./7-print_chessboard.c)
+```
+Write a function that prints the chessboard.
+```
+* Prototype: void print_chessboard(char (*a)[8]);
+
 
