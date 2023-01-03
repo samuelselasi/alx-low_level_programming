@@ -1,4 +1,5 @@
 ## 0x07. C - Even more pointers, arrays and strings
+![58fe6b229144b7fe5ebe88afe9ff5cabe2dd0863e1e79b2d02b4103c30b465dd](https://user-images.githubusercontent.com/85158665/210374083-c4aac40a-a2aa-4610-a62d-2be9516996eb.jpg)
 
 ## Learning Objectives
 * At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
