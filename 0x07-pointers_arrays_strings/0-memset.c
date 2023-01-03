@@ -2,7 +2,6 @@
 
 /**
  * _memset - function to set memory to array
- * to s by b
  * @s: string
  * @b: constant byte
  * @n: number of bytes
