@@ -1,4 +1,5 @@
 # 0x08. C - Recursion
+![a88](https://user-images.githubusercontent.com/85158665/210756896-ade9af9c-8187-4ef3-b36a-1b56a11b1ec2.jpg)
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
