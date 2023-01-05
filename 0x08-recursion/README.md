@@ -58,4 +58,12 @@ Write a function that returns the length of a string.
 
 FYI: The standard library provides a similar function: strlen. Run man strlen to learn more.
 
+[3-factorial.c](./3-factorial.c)
+```
+Write a function that returns the factorial of a given number.
+```
+* Prototype: int factorial(int n);
+* If n is lower than 0, the function should return -1 to indicate an error
+* Factorial of 0 is 1
+
 
