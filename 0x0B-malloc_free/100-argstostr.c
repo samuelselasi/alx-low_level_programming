@@ -1,20 +1,20 @@
 #include "main.h"
-#include <stdio.h>
+#include "_strlen.c"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * argstostr - array of args
- * @ac: argument count
- * @av: array of args
+ * argstostr - concatenate all args
+ * @ac: argc
+ * @av: arguments
  *
- * Return: char
+ * Return: array
  */
 
 char *argstostr(int ac, char **av)
 {
-	int size;
 	char *s;
-	int i, j, k;
+	int len = 0, i, j, k = 0;
 
 	if (ac == 0 || av == NULL)
 	{
@@ -22,29 +22,23 @@ char *argstostr(int ac, char **av)
 	}
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
-		{
-			size++;
-		}
+		len += _strlen(av[i]);
 	}
-
-	size += (ac + 1);
-	s = malloc(sizeof(char) * size);
+	len += (ac + 1);
+	s = malloc(len * sizeof(char));
 	if (s == NULL)
 	{
+		free(s);
 		return (NULL);
 	}
-	k = 0;
+
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
+		for (j = 0; j < _strlen(av[i]); j++)
 		{
-			s[k] = av[i][j];
-			k++;
+			s[k++] = av[i][j];
 		}
-		s[k] = '\n';
-		k++;
+		s[k++] = '\n';
 	}
-	s[k] = '\0';
 	return (s);
 }
