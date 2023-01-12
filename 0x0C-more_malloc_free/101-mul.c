@@ -36,8 +36,8 @@ int main(int argc, char *argv[])
 	}
 	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
-		printf("Error\n");
-		exit(98);
+		printf("0\n");
+		return (0);
 	}
 	size = _len(argv[1]) + _len(argv[2]);
 	final_prod = alloc_array(size + 1);
