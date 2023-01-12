@@ -11,7 +11,7 @@
 
 void sum(char *final_prod, char *next_prod, int next_len)
 {
-	int num, tens = 0;
+	unsigned int num, tens = 0;
 
 	while (*(final_prod + 1))
 	{
