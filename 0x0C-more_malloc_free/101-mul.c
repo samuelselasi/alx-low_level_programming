@@ -1,4 +1,8 @@
 #include "main.h"
+#include "init.c"
+#include "check_for_digits.c"
+#include "mul.c"
+#include "_print.c"
 
 /**
  * main - multiply 2 numbers
