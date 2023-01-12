@@ -41,7 +41,7 @@ void product(char *prod, char *mult, int digit, int zeroes)
 		}
 
 		num = (*mult - '0') * digit;
-		num += tens;
+		num = num + tens;
 		*prod = (num % 10) + '0';
 		tens = num / 10;
 	}
