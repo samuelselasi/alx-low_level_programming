@@ -29,3 +29,13 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 
 ## Tasks
+[dog.h](./dog.h)
+```
+Define a new type struct dog with the following elements:
+```
+* name, type = char *
+* age, type = float
+* owner, type = char *
+
+
+
