@@ -75,7 +75,7 @@ Define a new type dog_t as a new name for the type struct dog.
 
 [4-new_dog.c](./4-new_dog.c)
 
-
+![dog5](https://user-images.githubusercontent.com/85158665/212716577-38f67c7f-75ea-490c-8711-a4149208b92d.jpg)
 
 ```
 Write a function that creates a new dog.
