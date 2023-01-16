@@ -31,11 +31,12 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 ## Tasks
 [dog.h](./dog.h)
+
+![dog2](https://user-images.githubusercontent.com/85158665/212694910-4cc1f250-abee-43be-8c67-f0c01900642d.jpg)
+
 ```
 Define a new type struct dog with the following elements:
 ```
-![dog2](https://user-images.githubusercontent.com/85158665/212694910-4cc1f250-abee-43be-8c67-f0c01900642d.jpg)
-
 * name, type = char *
 * age, type = float
 * owner, type = char *
