@@ -66,7 +66,7 @@ Write a function that prints a struct dog
 
 [dog.h](./dog.h)
 
-
+![dog4](https://user-images.githubusercontent.com/85158665/212711866-013b1bcf-642c-4c31-85a1-b4d2a2f977e3.jpg)
 
 ```
 Define a new type dog_t as a new name for the type struct dog.
