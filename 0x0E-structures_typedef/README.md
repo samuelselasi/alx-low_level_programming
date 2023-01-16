@@ -52,7 +52,7 @@ Write a function that initialize a variable of type struct dog
 
 [2-print_dog.c](./2-print_dog.c)
 
-
+![dog3](https://user-images.githubusercontent.com/85158665/212702419-a8a9b92a-f13f-4af6-a239-c8373adb9920.jpg)
 
 ```
 Write a function that prints a struct dog
