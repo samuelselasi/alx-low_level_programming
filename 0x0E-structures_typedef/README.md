@@ -64,4 +64,11 @@ Write a function that prints a struct dog
 * If d is NULL print nothing.
 
 
+[dog.h](./dog.h)
+
+
+
+```
+Define a new type dog_t as a new name for the type struct dog.
+```
 
