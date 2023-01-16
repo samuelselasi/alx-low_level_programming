@@ -87,6 +87,8 @@ Write a function that creates a new dog.
 
 [5-free_dog.c](./5-free_dog.c)
 
+![dog6](https://user-images.githubusercontent.com/85158665/212717827-904e50f3-bbff-4dcb-9ad7-f856485794db.jpg)
+
 ```
 Write a function that frees dogs.
 ```
