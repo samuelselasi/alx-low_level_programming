@@ -1,4 +1,5 @@
 # 0x0E. C - Structures, typedef
+![dog1](https://user-images.githubusercontent.com/85158665/212694761-de41b199-bfda-46da-9a3d-c5990099f43d.jpg)
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
@@ -33,6 +34,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 ```
 Define a new type struct dog with the following elements:
 ```
+![dog2](https://user-images.githubusercontent.com/85158665/212694910-4cc1f250-abee-43be-8c67-f0c01900642d.jpg)
+
 * name, type = char *
 * age, type = float
 * owner, type = char *
