@@ -27,7 +27,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * You are allowed to use _putchar
 * You don’t have to push _putchar.c, we will use our file. If you do it won’t be taken into account
 * In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
-* The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called function_pointers.h
+* The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called [function_pointers.h](./function_pointers.h)
 * Don’t forget to push your header file
 * All your header files should be include guarded
 
@@ -38,5 +38,14 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 Write a function that prints a name.
 ```
 * Prototype: void print_name(char *name, void (*f)(char *));
+
+
+[1-array_iterator.c](./1-array_iterator.c)
+```
+Write a function that executes a function given as a parameter on each element of an array.
+```
+* Prototype: void array_iterator(int *array, size_t size, void (*action)(int));
+* where size is the size of the array
+* and action is a pointer to the function you need to use
 
 
