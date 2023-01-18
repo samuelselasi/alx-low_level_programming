@@ -33,3 +33,10 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 ## Tasks
 
+[0-print_name.c](./0-print_name.c)
+```
+Write a function that prints a name.
+```
+* Prototype: void print_name(char *name, void (*f)(char *));
+
+
