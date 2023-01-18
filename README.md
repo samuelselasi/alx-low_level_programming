@@ -45,6 +45,7 @@ and more!
 12. [0x0C-more_malloc_free](./0x0C-more_malloc_free)
 13. [0x0D-preprocessor](./0x0D-preprocessor)
 14. [0x0E-structures_typedef](./0x0E-structures_typedef)
+15. [0x0F-function_pointers](./0x0F-function_pointers)
 
 ## Credits
 Collaborators are acknowledged within each project
