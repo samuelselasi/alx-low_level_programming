@@ -46,6 +46,7 @@ and more!
 13. [0x0D-preprocessor](./0x0D-preprocessor)
 14. [0x0E-structures_typedef](./0x0E-structures_typedef)
 15. [0x0F-function_pointers](./0x0F-function_pointers)
+16. [0x10-variadic_functions](./0x10-variadic_functions)
 
 ## Credits
 Collaborators are acknowledged within each project
