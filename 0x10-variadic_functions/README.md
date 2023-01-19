@@ -71,10 +71,10 @@ Write a function that prints anything.
 ```
 * Prototype: void print_all(const char * const format, ...);
 * where format is a list of types of arguments passed to the function
-	* c: char
-	* i: integer
-	* f: float
-	* s: char * (if the string is NULL, print (nil) instead
+	* c: char [printc.c](./printc.c)
+	* i: integer [printi.c](./printi.c)
+	* f: float [print_f.c](./print_f.c)
+	* s: char * (if the string is NULL, print (nil) instead [prints.c](./prints.c)
 	* any other char should be ignored
 	* see example
 * You are not allowed to use for, goto, ternary operator, else, do ... while
