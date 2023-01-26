@@ -2,7 +2,7 @@
 
 /**
  * print_list - print all elements in list
- * @h: head of list
+ * @h: first node
  * Return: no. of nodes
  */
 
@@ -13,15 +13,12 @@ size_t print_list(const list_t *h)
 	while (h != NULL)
 	{
 		if (h->str == NULL)
-		{
 			printf("[0] (nil)\n");
-		}
 		else
-		{
 			printf("[%d] %s\n", h->len, h->str);
-		}
-		i++;
+
 		h = h->next;
+		i++;
 	}
 	return (i);
 }
