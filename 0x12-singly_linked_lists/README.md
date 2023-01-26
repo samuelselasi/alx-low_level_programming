@@ -1,4 +1,5 @@
 # 0x12. C - Singly linked lists
+![giphy-3](https://user-images.githubusercontent.com/85158665/214794846-26817fc7-40e9-4a3b-93d1-868dbadedcc1.gif)
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
