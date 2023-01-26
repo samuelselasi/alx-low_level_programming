@@ -47,6 +47,7 @@ and more!
 14. [0x0E-structures_typedef](./0x0E-structures_typedef)
 15. [0x0F-function_pointers](./0x0F-function_pointers)
 16. [0x10-variadic_functions](./0x10-variadic_functions)
+17. [0x12-singly_linked_lists](./0x12-singly_linked_lists)
 
 ## Credits
 Collaborators are acknowledged within each project
