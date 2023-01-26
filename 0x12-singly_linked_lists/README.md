@@ -66,3 +66,9 @@ Write a function that adds a new node at the end of a list_t list.
 * Return: the address of the new element, or NULL if it failed
 * str needs to be duplicated
 * You are allowed to use strdup
+
+[4-free_list.c](./4-free_list.c)
+```
+Write a function that frees a list_t list.
+```
+* Prototype: void free_list(list_t *head);
