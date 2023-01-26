@@ -1,4 +1,5 @@
 #include "lists.h"
+#include "_strlen.c"
 
 /**
  * add_node - add node to begining of list

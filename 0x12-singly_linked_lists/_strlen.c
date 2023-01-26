@@ -1,5 +1,3 @@
-#include "lists.h"
-
 /**
  * _strlen - find string length
  * @str: the string
