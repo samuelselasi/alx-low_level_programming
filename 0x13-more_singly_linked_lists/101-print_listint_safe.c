@@ -1,4 +1,5 @@
 #include "lists.h"
+#include "tmp_node.c"
 
 /**
  * print_listint_safe - print linked list
@@ -8,26 +9,25 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t i = 0;
-	long int j;
+	size_t i, j = 0;
+	const listint_t **list = NULL;
 
-	while (head)
+	while (head != NULL)
 	{
-		if (head == NULL)
-			exit(98);
-
-		j = head - head->next;
-		i++;
-		printf("[%p] %d\n", (void *)head, head->n);
-
-		if (j > 0)
-			head = head->next;
-		else
+		for (i = 0; i < j; i++)
 		{
-			printf("-> [%p] %d\n", (void *)head->next,
-					head->next->n);
-			break;
+			if (head == list[i])
+			{
+				printf("-> [%p] %d\n", (void *)head, head->n);
+				free(list);
+				return (j);
+			}
 		}
+		j++;
+		list = tmp_node(list, j, head);
+		printf("[%p] %d\n", (void *)head, head->n);
+		head = head->next;
 	}
-	return (i);
+	free(list);
+	return (j);
 }
