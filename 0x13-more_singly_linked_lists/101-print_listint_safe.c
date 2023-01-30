@@ -1,6 +1,4 @@
 #include "lists.h"
-#include "loops.c"
-#include "node_counter.c"
 
 /**
  * print_listint_safe - print linked list
@@ -10,34 +8,22 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	int i = 0;
-	int loops_found;
-	size_t num_nodes = 0;
-	const listint_t *tmp;
+	size_t i = 0;
+	long int j;
 
-	if (head == NULL)
-		exit(98);
-
-	loops_found = loops(head);
-	if (loops_found == 1)
+	while (head)
 	{
-		i = node_counter(head);
-		for (loops_found = 0; loops_found < i; loops_found++)
+		j = head - head->next;
+		i++;
+		printf("[%p] %d\n", (void *)head, head->n);
+		if (j > 0)
+			head = head->next;
+		else
 		{
-			printf("[%p] %d\n", (void *)tmp, tmp->n);
-			num_nodes += 1;
-			tmp = tmp->next;
+			printf("-> [%p] %d\n", (void *)head->next,
+					head->next->n);
+			break;
 		}
 	}
-	else if (loops_found == 0)
-	{
-		tmp = head;
-		while (tmp != NULL)
-		{
-			printf("[%p] %d\n", (void *)tmp, tmp->n);
-			num_nodes += 1;
-			tmp = tmp->next;
-		}
-	}
-	return (num_nodes);
+	return (i);
 }
