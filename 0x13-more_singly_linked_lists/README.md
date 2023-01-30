@@ -77,3 +77,10 @@ Write a function that frees a listint_t list.
 ```
 * Prototype: void free_listint2(listint_t **head);
 * The function sets the head to NULL
+
+[6-pop_listint.c](./6-pop_listint.c)
+```
+Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
+```
+* Prototype: int pop_listint(listint_t **head);
+* if the linked list is empty return 0
