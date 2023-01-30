@@ -5,6 +5,7 @@
  * @list: old list
  * @size: size of new list
  * @new: new list
+ *
  * Return: newlist
  */
 
