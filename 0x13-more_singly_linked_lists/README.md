@@ -137,3 +137,13 @@ Write a function that prints a listint_t linked list.
 * You should go through the list only once
 * If the function fails, exit the program with status 98
 * Output format: see example
+
+[102-free_listint_safe.c](./102-free_listint_safe.c)
+```
+Write a function that frees a listint_t list.
+```
+* Prototype: size_t free_listint_safe(listint_t **h);
+* This function can free lists with a loop
+* You should go though the list only once
+* Returns: the size of the list that was free’d
+* The function sets the head to NULL
