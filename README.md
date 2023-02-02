@@ -49,6 +49,7 @@ and more!
 16. [0x10-variadic_functions](./0x10-variadic_functions)
 17. [0x12-singly_linked_lists](./0x12-singly_linked_lists)
 18. [0x13-more_singly_linked_lists](./0x13-more_singly_linked_lists)
+19. [0x14-bit_manipulation](./0x14-bit_manipulation)
 
 ## Credits
 Collaborators are acknowledged within each project
