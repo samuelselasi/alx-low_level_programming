@@ -1,5 +1,17 @@
 #include "main.h"
 
+#include "_strncmp.c"
+#include "_close.c"
+#include "_read.c"
+#include "elf_magic.c"
+#include "elf_class.c"
+#include "elf_data.c"
+#include "elf_version.c"
+#include "elf_osabi.c"
+#include "elf_abivers.c"
+#include "elf_type.c"
+#include "elf_entry.c"
+
 /**
  * main - copy a file's contents to another file
  * @argc: the argument count
