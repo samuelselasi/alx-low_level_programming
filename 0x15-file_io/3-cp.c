@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 		__exit(97, NULL, 0);
 
-	umask(066);
 	fd_2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fd_2 == -1)
 		__exit(99, argv[2], 0);
