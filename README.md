@@ -53,14 +53,14 @@ and more!
 20. [0x15-file_io](./0x15-file_io)
 
 ## Articles
-[Writing Clean & Effective Code](https://medium.com/@onepunchcoder/writing-clean-effective-code-b29dcfb09ae)
-[From Zero to Pointer Hero](https://medium.com/@onepunchcoder/from-zero-to-pointer-hero-2608c4d7ca19)
-[In A Twist For A While](https://medium.com/@onepunchcoder/in-a-twist-for-a-while-b3e34939ad7d)
-[Crackme Open](https://medium.com/@onepunchcoder/crackme-open-9aa73dc2962)
-[Russian Dolls of Programming](https://medium.com/@onepunchcoder/russian-dolls-of-programming-9a530e16f843)
-[Dynamic Memory Allocation In C](https://medium.com/@onepunchcoder/dynamic-memory-allocation-in-c-4f21e8f01648)
-[Variadic Functions Explained](https://medium.com/@onepunchcoder/variadic-functions-explained-fd3b4ab6fd84)
-[Crackme Open, Twice!](https://medium.com/@onepunchcoder/crackme-open-twice-821a9f8c9a87)
+* [Writing Clean & Effective Code](https://medium.com/@onepunchcoder/writing-clean-effective-code-b29dcfb09ae)
+* [From Zero to Pointer Hero](https://medium.com/@onepunchcoder/from-zero-to-pointer-hero-2608c4d7ca19)
+* [In A Twist For A While](https://medium.com/@onepunchcoder/in-a-twist-for-a-while-b3e34939ad7d)
+* [Crackme Open](https://medium.com/@onepunchcoder/crackme-open-9aa73dc2962)
+* [Russian Dolls of Programming](https://medium.com/@onepunchcoder/russian-dolls-of-programming-9a530e16f843)
+* [Dynamic Memory Allocation In C](https://medium.com/@onepunchcoder/dynamic-memory-allocation-in-c-4f21e8f01648)
+* [Variadic Functions Explained](https://medium.com/@onepunchcoder/variadic-functions-explained-fd3b4ab6fd84)
+* [Crackme Open, Twice!](https://medium.com/@onepunchcoder/crackme-open-twice-821a9f8c9a87)
 
 ## Credits
 Collaborators are acknowledged within each project
