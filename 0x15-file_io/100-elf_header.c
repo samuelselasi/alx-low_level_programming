@@ -39,7 +39,13 @@ int main(int argc, const char *argv[])
 		exit(98);
 	}
 	_read(fd, (char *) buffer, 18);
-
+	if (buffer[0] != 0x7f || buffer[1] != 'E' || buffer[2] != 'L'
+			|| buffer[3] != 'F')
+	{
+		write(STDERR_FILENO, "Error: Not an ELF file\n", 23);
+		_close(fd);
+		exit(98);
+	}
 	elf_magic(buffer);
 	bit_mode = elf_class(buffer);
 	big_endian = elf_data(buffer);
