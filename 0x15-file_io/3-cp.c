@@ -1,5 +1,4 @@
 #include "main.h"
-#include "__exit.c"
 
 /**
  * main - copy file
@@ -11,33 +10,41 @@
 
 int main(int argc, char *argv[])
 {
-	int fd_1, fd_2, n_read, n_write;
-	char *buffer[1024];
+	int src, dest, on_close, n_write, n_read;
+	char buffer[1024];
 
 	if (argc != 3)
-		__exit(97, NULL, 0);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 
-	fd_2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
-	if (fd_2 == -1)
-		__exit(99, argv[2], 0);
+	dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	if (dest == -1)
+		dprintf(STDERR_FILENO, WRITE_ERR, argv[2]), exit(99);
 
-	if (chmod(argv[2], 0664) == -1)
-		__exit(100, argv[2], 0);
+	src = open(argv[1], O_RDONLY);
+	if (src == -1)
+		dprintf(STDERR_FILENO, READ_ERR, argv[1]), exit(98);
 
-	fd_1 = open(argv[1], O_RDONLY);
-	if (fd_1 == -1)
-		__exit(98, argv[1], 0);
-
-	while ((n_read = read(fd_1, buffer, 1024)) != 0)
+	while (1)
 	{
+		n_read = read(src, buffer, 1024);
 		if (n_read == -1)
-			__exit(98, argv[1], 0);
+			dprintf(STDERR_FILENO, READ_ERR, argv[1]), exit(98);
 
-		n_write = write(fd_2, buffer, n_read);
-		if (n_write == -1)
-			__exit(99, argv[2], 0);
+		if (n_read > 0)
+		{
+			n_write = write(dest, buffer, n_read);
+			if (n_write == -1)
+				dprintf(STDERR_FILENO, WRITE_ERR, argv[2]), exit(99);
+		} else
+			break;
 	}
-	close(fd_2) == -1 ? (__exit(100, NULL, fd_2)) : close(fd_2);
-	close(fd_1) == -1 ? (__exit(100, NULL, fd_1)) : close(fd_1);
+	on_close = close(src);
+	if (on_close == -1)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", src), exit(100);
+
+	on_close = close(dest);
+	if (on_close == -1)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dest), exit(100);
+
 	return (0);
 }
