@@ -286,3 +286,56 @@ julien@ubuntu:~/0x17. Doubly linked lists$ valgrind ./e
 ==4197== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 julien@ubuntu:~/0x17. Doubly linked lists$
 ```
+[5. Get node at index](./5-get_dnodeint.c)
+
+Write a function that returns the nth node of a `dlistint_t` linked list.
+
+* Prototype: `dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);`
+* where `index` is the index of the node, starting from `0`
+* if the node does not exist, return `NULL`
+```
+julien@ubuntu:~/0x17. Doubly linked lists$ cat 5-main.c
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
+int main(void)
+{
+    dlistint_t *head;
+    dlistint_t *node;
+
+    head = NULL;
+    add_dnodeint_end(&head, 0);
+    add_dnodeint_end(&head, 1);
+    add_dnodeint_end(&head, 2);
+    add_dnodeint_end(&head, 3);
+    add_dnodeint_end(&head, 4);
+    add_dnodeint_end(&head, 98);
+    add_dnodeint_end(&head, 402);
+    add_dnodeint_end(&head, 1024);
+    print_dlistint(head);
+    node = get_dnodeint_at_index(head, 5);
+    printf("%d\n", node->n);
+    free_dlistint(head);
+    head = NULL;
+    return (EXIT_SUCCESS);
+}
+julien@ubuntu:~/0x17. Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 5-get_dnodeint.c -o h
+julien@ubuntu:~/0x17. Doubly linked lists$ ./h
+0
+1
+2
+3
+4
+98
+402
+1024
+98
+julien@ubuntu:~/0x17. Doubly linked lists$
+```
