@@ -4,7 +4,7 @@
 
 * [What is a Doubly Linked List](https://www.youtube.com/watch?v=k0pjD12bzP0)
 ## Requirements
-###General
+### General
 * Allowed editors: `vi`, `vim`, `emacs`
 * All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
 * All your files should end with a new line
