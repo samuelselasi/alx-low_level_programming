@@ -581,7 +581,7 @@ julien@ubuntu:~/0x17. Doubly linked lists$ ./k
 -----------------
 julien@ubuntu:~/0x17. Doubly linked lists$
 ```
-[9. Crackme4](./)
+[9. Crackme4](./100-password)
 
 Find the password for [crackme4](https://github.com/holbertonschool/0x17.c).
 
