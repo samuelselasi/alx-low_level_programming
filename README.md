@@ -51,6 +51,7 @@ and more!
 18. [0x13-more_singly_linked_lists](./0x13-more_singly_linked_lists)
 19. [0x14-bit_manipulation](./0x14-bit_manipulation)
 20. [0x15-file_io](./0x15-file_io)
+21. [0x17-doubly_linked_lists](./0x17-doubly_linked_lists)
 
 ## Articles
 * [Writing Clean & Effective Code](https://medium.com/@onepunchcoder/writing-clean-effective-code-b29dcfb09ae)
@@ -61,6 +62,7 @@ and more!
 * [Dynamic Memory Allocation In C](https://medium.com/@onepunchcoder/dynamic-memory-allocation-in-c-4f21e8f01648)
 * [Variadic Functions Explained](https://medium.com/@onepunchcoder/variadic-functions-explained-fd3b4ab6fd84)
 * [Crackme Open, Twice!](https://medium.com/@onepunchcoder/crackme-open-twice-821a9f8c9a87)
+* [Technical Interview Preparation](https://medium.com/@onepunchcoder/technical-interview-preparation-eed536f2254d)
 
 ## Credits
 Collaborators are acknowledged within each project
