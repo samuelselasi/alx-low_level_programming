@@ -597,3 +597,20 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 * Save the result in the file `102-result`
 * Your file should contain the exact result, no new line, no extra space
+
+[11. crackme5](./103-keygen.c)
+
+Write a keygen for [crackme5](https://github.com/holbertonschool/0x17.c).
+
+* Usage of the crackme: `./crackme5 username key`
+* The crackme will segfault if you do not enter the correct key for the user
+* Usage for your keygen: `./keygen5 username`
+* Your keygen should print a valid key for the `username`
+```
+julien@ubuntu:~/0x17$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 103-keygen.c -o keygen5
+julien@ubuntu:~/0x17$ ./crackme5 julien javascript
+Segmentation fault (core dumped)
+julien@ubuntu:~/0x17$ ./crackme5 julien `./keygen5 julien`
+Congrats!
+julien@ubuntu:~/0x17$
+```
