@@ -63,6 +63,7 @@ and more!
 * [Variadic Functions Explained](https://medium.com/@onepunchcoder/variadic-functions-explained-fd3b4ab6fd84)
 * [Crackme Open, Twice!](https://medium.com/@onepunchcoder/crackme-open-twice-821a9f8c9a87)
 * [Technical Interview Preparation](https://medium.com/@onepunchcoder/technical-interview-preparation-eed536f2254d)
+* [Crackme Open, Again?](https://medium.com/@onepunchcoder/crackme-open-again-95b306cea122)
 
 ## Credits
 Collaborators are acknowledged within each project
