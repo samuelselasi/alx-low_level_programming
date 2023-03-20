@@ -202,6 +202,8 @@ julien@ubuntu:~/0x18$
 ```
 [3. Code injection: Win the Giga Millions!](./101-make_me_win.sh)
 
+![tumblr_mlzp3qgHss1s5xo13o3_r1_1280 (1)](https://user-images.githubusercontent.com/85158665/226321641-e7410dc6-f801-4ba8-9be8-9c3d202a128d.jpg)
+
 I bought a ticket for the Giga Millions and chose these numbers: 9, 8, 10, 24, 75 + 9. If you could run two commands on the same server where the Giga Millions program runs, could you make me win the Jackpot?
 
 * Our mole got us a copy of the program, you can download it [here](https://github.com/holbertonschool/0x18.c). Our mole also gave us a piece of documentation:
