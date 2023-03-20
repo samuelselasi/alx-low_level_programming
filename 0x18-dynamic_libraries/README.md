@@ -54,7 +54,7 @@ char *_strstr(char *haystack, char *needle);
 ```
 If you haven’t coded all of the above functions create empty ones, with the right prototype.
 
-Don’t forget to push your main.h file in your repository, containing at least all the prototypes of the above functions.
+Don’t forget to push your `main.h` file in your repository, containing at least all the prototypes of the above functions.
 ```
 julien@ubuntu:~/0x18. Dynamic libraries$ ls -la lib*
 -rwxrwxr-x 1 julien julien 13632 Jan  7 06:25 libdynamic.so
