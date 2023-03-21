@@ -57,6 +57,7 @@ and more!
 ## Articles
 * [Writing Clean & Effective Code](https://medium.com/@onepunchcoder/writing-clean-effective-code-b29dcfb09ae)
 * [From Zero to Pointer Hero](https://medium.com/@onepunchcoder/from-zero-to-pointer-hero-2608c4d7ca19)
+* [Crackme 101](https://medium.com/@onepunchcoder/crackme-101-cf657cf81c0)
 * [In A Twist For A While](https://medium.com/@onepunchcoder/in-a-twist-for-a-while-b3e34939ad7d)
 * [Crackme Open](https://medium.com/@onepunchcoder/crackme-open-9aa73dc2962)
 * [Russian Dolls of Programming](https://medium.com/@onepunchcoder/russian-dolls-of-programming-9a530e16f843)
