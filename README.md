@@ -66,6 +66,7 @@ and more!
 * [Crackme Open, Twice!](https://medium.com/@onepunchcoder/crackme-open-twice-821a9f8c9a87)
 * [Technical Interview Preparation](https://medium.com/@onepunchcoder/technical-interview-preparation-eed536f2254d)
 * [Crackme Open, Again?](https://medium.com/@onepunchcoder/crackme-open-again-95b306cea122)
+* Dynamic libraries article coming out soon!!
 
 ## Credits
 Collaborators are acknowledged within each project
