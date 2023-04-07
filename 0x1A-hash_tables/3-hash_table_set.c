@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *tmp_value;
 	unsigned long int i, KeyIndex;
 
-	if (ht == NULL || key == NULL || value == NULL || *key == '\0')
+	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
 
 	tmp_value = strdup(value);
