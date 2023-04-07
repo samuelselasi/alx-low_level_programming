@@ -22,6 +22,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	KeyIndex = key_index((const unsigned char *)key, ht->size);
+
 	i = KeyIndex;
 	while (ht->array[i])
 	{
@@ -48,6 +49,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_element->value = tmp_value;
 	new_element->next = ht->array[KeyIndex];
 	ht->array[KeyIndex] = new_element;
-
 	return (1);
 }
