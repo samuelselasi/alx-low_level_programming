@@ -53,6 +53,7 @@ and more!
 20. [0x15-file_io](./0x15-file_io)
 21. [0x17-doubly_linked_lists](./0x17-doubly_linked_lists)
 22. [0x18-dynamic_libraries](0x18-dynamic_libraries)
+23. [0x1A-hash_tables](./0x1A-hash_tables)
 
 ## Articles
 * [Writing Clean & Effective Code](https://medium.com/@onepunchcoder/writing-clean-effective-code-b29dcfb09ae)
