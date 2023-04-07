@@ -13,15 +13,12 @@ shash_table_t *shash_table_create(unsigned long int size)
 	sht = malloc(sizeof(shash_table_t));
 	if (sht == NULL)
 		return (NULL);
-
 	sht->size = size;
 	sht->array = malloc(sizeof(shash_node_t *) * size);
 	if (sht->array == NULL)
 		return (NULL);
-
 	for (i = 0; i < size; i++)
 		sht->array[i] = NULL;
-
 	sht->shead = NULL;
 	sht->stail = NULL;
 
@@ -44,11 +41,9 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
-
 	tmp_value = strdup(value);
 	if (tmp_value == NULL)
 		return (0);
-
 	KeyIndex = key_index((const unsigned char *)key, ht->size);
 	tmp_element = ht->shead;
 	while (tmp_element)
@@ -61,14 +56,12 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		}
 		tmp_element = tmp_element->snext;
 	}
-
 	new_element = malloc(sizeof(shash_node_t));
 	if (new_element == NULL)
 	{
 		free(tmp_value);
 		return (0);
 	}
-
 	new_element->key = strdup(key);
 	if (new_element->key == NULL)
 	{
@@ -76,11 +69,9 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		free(new_element);
 		return (0);
 	}
-
 	new_element->value = tmp_value;
 	new_element->next = ht->array[KeyIndex];
 	ht->array[KeyIndex] = new_element;
-
 	if (ht->shead == NULL)
 	{
 		new_element->sprev = NULL;
@@ -88,7 +79,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		ht->shead = new_element;
 		ht->stail = new_element;
 	}
-
 	else if (strcmp(ht->shead->key, key) > 0)
 	{
 		new_element->sprev = NULL;
@@ -111,7 +101,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 			tmp_element->snext->sprev = new_element;
 		tmp_element->snext = new_element;
 	}
-
 	return (1);
 }
 
@@ -129,15 +118,12 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
-
 	KeyIndex = key_index((const unsigned char *)key, ht->size);
 	if (KeyIndex >= ht->size)
 		return (NULL);
-
 	node = ht->shead;
 	while (node != NULL && strcmp(node->key, key) != 0)
 		node = node->snext;
-
 	return ((node == NULL) ? NULL : node->value);
 }
 
@@ -152,7 +138,6 @@ void shash_table_print(const shash_table_t *ht)
 
 	if (ht == NULL)
 		return;
-
 	sort_node = ht->shead;
 	printf("{");
 	while (sort_node != NULL)
@@ -162,7 +147,6 @@ void shash_table_print(const shash_table_t *ht)
 		if (sort_node != NULL)
 			printf(", ");
 	}
-
 	printf("}\n");
 }
 
@@ -177,13 +161,11 @@ void shash_table_print_rev(const shash_table_t *ht)
 
 	if (ht == NULL)
 		return;
-
 	rev_node = ht->stail;
 	printf("{");
 	while (rev_node != NULL)
 	{
 		printf("'%s': '%s'", rev_node->key, rev_node->value);
-
 		rev_node = rev_node->sprev;
 		if (rev_node != NULL)
 			printf(", ");
@@ -203,7 +185,6 @@ void shash_table_delete(shash_table_t *ht)
 
 	if (ht == NULL)
 		return;
-
 	node = ht->shead;
 	while (node)
 	{
@@ -213,7 +194,6 @@ void shash_table_delete(shash_table_t *ht)
 		free(node);
 		node = tmp_node;
 	}
-
 	free(tmp_ht->array);
 	free(tmp_ht);
 }
