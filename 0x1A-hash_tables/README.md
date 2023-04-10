@@ -457,6 +457,7 @@ julien@ubuntu:~/0x1A. Hash tables$
 
 In [PHP](https://www.php.net/manual/en/intro-whatis.php), hash tables are **ordered**. Wait… WAT? How is this even possible?
 
+![5ebbea5dea5a575b38243d597604000715982925](https://user-images.githubusercontent.com/85158665/230998936-21a69fe2-6ce2-4819-9db4-d24b39d39f2d.gif)
 
 **Before you continue**, please take a moment to think about it: how you would implement it if you were asked to during an interview or a job. What data structures would you use? How would it work?
 
@@ -568,5 +569,4 @@ julien@ubuntu:~/0x1A. Hash tables$ ./sht
 {'z': '4', 'y': '0', 'n': '5', 'm': '7', 'j': '1', 'c': '2', 'b': '3', 'a': '6'}
 julien@ubuntu:~/0x1A. Hash tables$
 ```
-
-
+![php](https://user-images.githubusercontent.com/85158665/230999054-12d80e5f-69f8-4bb2-9867-f3a7d20b020e.png)
