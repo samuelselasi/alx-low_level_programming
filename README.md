@@ -67,6 +67,7 @@ and more!
 * [Crackme Open, Twice!](https://medium.com/@onepunchcoder/crackme-open-twice-821a9f8c9a87)
 * [Technical Interview Preparation](https://medium.com/@onepunchcoder/technical-interview-preparation-eed536f2254d)
 * [Crackme Open, Again?](https://medium.com/@onepunchcoder/crackme-open-again-95b306cea122)
+* [Win Mega Millions!](https://onepunchcoder.medium.com/win-mega-millions-7b5a9986bbdf?source=friends_link&sk=dff2d12c9c137566d1afe55de07551e3)
 * Dynamic libraries article coming out soon!!
 
 ## Credits
