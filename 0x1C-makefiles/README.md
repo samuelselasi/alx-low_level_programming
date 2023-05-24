@@ -63,3 +63,21 @@ j#00000000000000w]+]++qw#00000000000000
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 julien@ubuntu:~/0x1C. Makefiles$
 ```
+
+[1. make -f 1-Makefile](./1-Makefile)
+
+**Requirements**:
+
+* name of the executable: `school`
+* rules: `all`
+	* The `all` rule builds your executable
+* variables: `CC`, `SRC`
+	* `CC`: the compiler to be used
+	* `SRC`: the `.c` files
+```
+julien@ubuntu:~/0x1C. Makefiles$ make -f 1-Makefile
+gcc main.c school.c -o school
+julien@ubuntu:~/0x1C. Makefiles$ make -f 1-Makefile
+gcc main.c school.c -o school
+julien@ubuntu:~/0x1C. Makefiles$
+```
