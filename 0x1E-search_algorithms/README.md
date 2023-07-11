@@ -258,3 +258,53 @@ Found 999 at index: -1
 [8. Big O #5](./101-O)
 
 What is the `time complexity` (average case) of a jump search in an array of size `n`, using `step = sqrt(n)`?
+
+[9. Interpolation search](./102-interpolation.c)
+
+Write a function that searches for a value in a sorted array of integers using the [Interpolation search algorithm](https://en.wikipedia.org/wiki/Interpolation_search)
+
+* Prototype : `int interpolation_search(int *array, size_t size, int value);`
+* Where `array` is a pointer to the first element of the array to search in
+* `size` is the number of elements in `array`
+* And `value` is the value to search for
+* Your function must return the first index where `value` is located
+* You can assume that `array` will be sorted in ***ascending order***
+* If `value` is not present in `array` or if `array` is `NULL`, your function must return `-1`
+* To determine the probe position, you can use : `size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]))`
+* Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
+```
+wilfried@0x1E-search_algorithms$ cat 102-main.c 
+#include <stdio.h>
+#include <stdlib.h>
+#include "search_algos.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always EXIT_SUCCESS
+ */
+int main(void)
+{
+    int array[] = {
+        0, 0, 1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 8, 9, 9
+    };
+    size_t size = sizeof(array) / sizeof(array[0]);
+
+    printf("Found %d at index: %d\n\n", 3, interpolation_search(array, size, 3));
+    printf("Found %d at index: %d\n\n", 7, interpolation_search(array, size, 7));
+    printf("Found %d at index: %d\n", 999, interpolation_search(array, size, 999));
+    return (EXIT_SUCCESS);
+}
+wilfried@0x1E-search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 102-main.c 102-interpolation.c -o 102-interpolation
+wilfried@0x1E-search_algorithms$ ./102-interpolation 
+Value checked array[6] = [2]
+Value checked array[7] = [3]
+Found 3 at index: 7
+
+Value checked array[14] = [7]
+Found 7 at index: 14
+
+Value checked array[2109] is out of range
+Found 999 at index: -1
+```
+
