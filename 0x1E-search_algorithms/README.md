@@ -679,3 +679,6 @@ Value checked at index [15] = [99]
 Found 999 at index: (nil)
 ```
 
+[14. Big O #6](./107-O)
+
+What is the `time complexity` (average case) of a jump search in a singly linked list of size `n`, using `step = sqrt(n)`?
