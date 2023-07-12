@@ -431,3 +431,124 @@ Searching in array: 8, 9
 Searching in array: 9
 Found 999 at index: -1
 ```
+
+[12. Jump search in a singly linked list](./105-jump_list.c)
+
+You might think that linear search is not as effective as any other algorithm, right? Well, we should see what happens with a singly linked list.
+
+Please define the following data structure in your `search_algos.h` header file:
+```
+/**
+ * struct listint_s - singly linked list
+ *
+ * @n: Integer
+ * @index: Index of the node in the list
+ * @next: Pointer to the next node
+ *
+ * Description: singly linked list node structure
+ */
+typedef struct listint_s
+{
+    int n;
+    size_t index;
+    struct listint_s *next;
+} listint_t;
+```
+Write a function that searches for a value in a sorted list of integers using the Jump search algorithm.
+
+* Prototype : `listint_t *jump_list(listint_t *list, size_t size, int value);`
+* Where `list` is a pointer to the head of the list to search in
+* `size` is the number of nodes in `list`
+* And `value` is the value to search for
+* Your function must return a pointer to the first node where `value` is located
+* You can assume that `list` will be sorted in ***ascending order***
+* If `value` is not present in `head` or if `head` is `NULL`, your function must return `NULL`
+* You have to use the `square root` of the `size` of the `list` as the jump step.
+* You can use the `sqrt()` function included in `<math.h>` (don’t forget to compile with `-lm`)
+* Every time you compare a `value` in the `list` to the value you are searching, you have to print this value (see example)
+
+**NOTE**: [You can find here](https://github.com/alx-tools/0x1D.c/tree/master/listint) the functions used in the example. You don’t need to push them, we will compile your file with our own implementation during the correction.
+```
+wilfried@0x1E-search_algorithms$ cat 105-main.c 
+#include <stdio.h>
+#include <stdlib.h>
+#include "search_algos.h"
+
+listint_t *create_list(int *array, size_t size);
+void print_list(const listint_t *list);
+void free_list(listint_t *list);
+
+/**
+ * main - Entry point
+ *
+ * Return: Always EXIT_SUCCESS
+ */
+int main(void)
+{
+    listint_t *list, *res;
+    int array[] = {
+        0, 1, 2, 3, 4, 7, 12, 15, 18, 19, 23, 53, 61, 62, 76, 99
+    };
+    size_t size = sizeof(array) / sizeof(array[0]);
+
+    list = create_list(array, size);
+    print_list(list);
+
+    res =  jump_list(list, size, 53);
+    printf("Found %d at index: %lu\n\n", 53, res->index);
+    res =  jump_list(list, size, 2);
+    printf("Found %d at index: %lu\n\n", 2, res->index);
+    res =  jump_list(list, size, 999);
+    printf("Found %d at index: %p\n", 999, (void *) res);
+
+    free_list(list);
+    return (EXIT_SUCCESS);
+}
+wilfried@0x1E-search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 105-main.c 105-jump_list.c listint/*.c -lm -o 105-jump
+wilfried@0x1E-search_algorithms$ ./105-jump 
+List :
+Index[0] = [0]
+Index[1] = [1]
+Index[2] = [2]
+Index[3] = [3]
+Index[4] = [4]
+Index[5] = [7]
+Index[6] = [12]
+Index[7] = [15]
+Index[8] = [18]
+Index[9] = [19]
+Index[10] = [23]
+Index[11] = [53]
+Index[12] = [61]
+Index[13] = [62]
+Index[14] = [76]
+Index[15] = [99]
+
+Value checked at index [4] = [4]
+Value checked at index [8] = [18]
+Value checked at index [12] = [61]
+Value found between indexes [8] and [12]
+Value checked at index [8] = [18]
+Value checked at index [9] = [19]
+Value checked at index [10] = [23]
+Value checked at index [11] = [53]
+Found 53 at index: 11
+
+Value checked at index [4] = [4]
+Value found between indexes [0] and [4]
+Value checked at index [0] = [0]
+Value checked at index [1] = [1]
+Value checked at index [2] = [2]
+Found 2 at index: 2
+
+Value checked at index [4] = [4]
+Value checked at index [8] = [18]
+Value checked at index [12] = [61]
+Value checked at index [15] = [99]
+Value found between indexes [12] and [15]
+Value checked at index [12] = [61]
+Value checked at index [13] = [62]
+Value checked at index [14] = [76]
+Value checked at index [15] = [99]
+Found 999 at index: (nil)
+```
