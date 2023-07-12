@@ -682,3 +682,7 @@ Found 999 at index: (nil)
 [14. Big O #6](./107-O)
 
 What is the `time complexity` (average case) of a jump search in a singly linked list of size `n`, using `step = sqrt(n)`?
+
+[15. Big O #7](./108-O)
+
+What is the `time complexity` (average case) of a jump search in a skip list of size `n`, with an express lane using `step = sqrt(n)`?
